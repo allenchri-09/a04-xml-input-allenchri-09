@@ -17,9 +17,12 @@ public class XmlHandler extends DefaultHandler {
                              Attributes attributes) throws SAXException {
         System.out.println("Start element");
         // Check if this is an opening element for a product
-
+        System.out.println("URI: " + uri);
+        System.out.println("LOCALNAME: " + localName);
+        System.out.println("QNAME: " +qName);
+        System.out.println("ATTRIBUTES: " attributes);
         // If so, store each of its attribute values
-
+    for( int i = 0; i < attributes.getLength(); i++)
         // Determine type of product (taxable vs. nontaxable)
 
     }
